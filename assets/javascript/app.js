@@ -20,9 +20,19 @@ var giphyProject = {
 		if($("#topic").val().trim() === ""){
 			alert("Type in a New Topic First")
 		} else {
-			var toAdd = $("#topic").val().trim()
-			giphyProject.topicList.push(toAdd)
-			giphyProject.loadButtons();
+			var doesExist = false;
+			for(var i = 0; i < giphyProject.topicList.length; i++){
+				if(giphyProject.topicList[i] === $("#topic").val().trim()){
+					doesExist = true;
+				}
+			}
+			if(doesExist !== true) {
+				var toAdd = $("#topic").val().trim()
+				giphyProject.topicList.push(toAdd)
+				giphyProject.loadButtons();
+			} else {
+				alert("Topic Already Exists")
+			}
 		}
 	},
 	//Gets 10 gifs based on topic button chosen
