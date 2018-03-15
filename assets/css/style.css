@@ -1,0 +1,56 @@
+body{
+	background-image: url(../images/circles-light.png)
+}
+
+h2,
+p {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.gifContainer {
+	float: left;
+	margin: 10px;
+}
+
+.glyphicon-heart,
+.glyphicon-remove,
+.glyphicon-save {
+	float: right;
+}
+
+.btn,
+#topic,
+label {
+	margin: 2px;
+}
+
+img {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+h1 {
+	font-weight: bold;
+	text-align: center;
+	font-family: 'Rammetto One', cursive;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 14px;
+}
+
+#top{
+	background: grey;
+}
+
+.row {
+	margin: 20px;
+}
+
+#favs-div {
+	border: solid black 2px;	
+}
+#favTitle {
+	font-size: 25px;
+}
